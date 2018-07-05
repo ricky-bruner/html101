@@ -11,17 +11,18 @@ body {
     background-color: lightslategray;
     
 }
+
 .header-div {
     display: flex;
     justify-content: center;
     background-color: white;
     background: linear-gradient(to top left, black, rgb(54, 15, 15), black, rgb(54, 15, 15));
 }
+
 .header-div img {
     width: 170px; 
     height: 170px;
     padding-top: 2em;
-
 }
 
 nav {
@@ -41,59 +42,71 @@ nav a {
     color: darkred;
     
 }
+
 nav a:link {
     text-decoration: none;
 }
+
 nav a:visited {
     color: darkred;
 }
+
 nav a:hover {
     color: white;
 }
+
 .main-image {
     max-width: 100%;
-
 }
+
 .wrapper {
     background-color: black;
 }
+
 h1, h2, h3 {
     color: darkgoldenrod;
     font-family: "Tangerine", cursive;
     text-align: center;
     text-shadow: black 2px 2px;
 }
+
 h2, h3 {
     background: linear-gradient(to top left, black, rgb(54, 15, 15), black, rgb(54, 15, 15));
     padding: .5em;
     border-radius: .6em;
 }
+
 h1 {
     font-size: 4em;
     text-align: center;
     padding: .5em;
-
 }
+
 h2 {
     font-size: 2.5em;
 }
+
 h3 {
     font-size: 1.5em;
 }
+
 .flex-container {
     display: flex;
     display: -webkit-flex;
     width: 100%;
     background-color:darkgrey;
 }
+
 main {
     flex: 2;
     margin: 1em;
 }
+
 aside {
     flex: 1;
     margin: 1em;
 }
+
 footer {
     background-color: darkred;
     color: darkgoldenrod;
@@ -105,6 +118,7 @@ footer a {
     color: goldenrod;
     text-decoration: none;
 }
+
 footer a:hover {
     color: white;
 }
