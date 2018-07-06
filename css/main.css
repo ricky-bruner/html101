@@ -96,7 +96,24 @@ h3 {
     width: 100%;
     background-color:darkgrey;
 }
-
+.section-img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+.section-item {
+    width: 30%;
+    margin: 1em;
+    background-color: darkgoldenrod;
+}
+.section-item h4 {
+    font-size: 2em;
+    font-family: "Tangerine", cursive;
+    text-align: center;
+}
+.section-item p {
+    padding: 1em;
+}
 main {
     flex: 2;
     margin: 1em;
