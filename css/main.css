@@ -105,7 +105,17 @@ h3 {
     width: 100%;
     background-color:rgb(126, 124, 124);
 }
-
+.dumbledore {
+    flex-direction: column;
+    margin: 1em auto;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    padding: 2em;
+}
+.dumbledore img {
+    width: 100%;
+}
 .section-img {
     width: 100%;
     margin: 0 auto;
@@ -135,7 +145,7 @@ h3 {
     border-radius: 15px;
 }
 
-.section-item h4 {
+h4 {
     font-size: 2em;
     font-family: "Tangerine", cursive;
     text-align: center;
