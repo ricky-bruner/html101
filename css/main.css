@@ -26,7 +26,7 @@ body {
 }
 
 nav {
-    background-color: darkgoldenrod;
+    background: radial-gradient(circle, darkgoldenrod, goldenrod, gold, goldenrod, darkgoldenrod, black);
     display: flex;
     display: -webkit-flex;
     width: 100%;
@@ -34,13 +34,17 @@ nav {
     justify-content: space-evenly;
     padding: .4em;
     font-family: 'Tangerine', cursive;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 nav a {
     margin: .2em 1em 0px 1em;
     color: darkred;
-    
+    text-shadow:
+		-.5px -.5px 0 #000,
+		.5px -.5px 0 #000,
+		-.5px .5px 0 #000,
+		.5px .5px 0 #000;
 }
 
 nav a:link {
@@ -64,7 +68,7 @@ nav a:hover {
 }
 
 h1, h2, h3 {
-    color: darkgoldenrod;
+    color: rgb(206, 152, 16);
     font-family: "Tangerine", cursive;
     text-align: center;
     text-shadow: black 2px 2px;
@@ -80,6 +84,11 @@ h1 {
     font-size: 4em;
     text-align: center;
     padding: .5em;
+    text-shadow:
+		-1px -1px 0 darkred,
+		1px -1px 0 darkred,
+		-1px 1px 0 darkred,
+		1px 1px 0 darkred;
 }
 
 h2 {
@@ -94,26 +103,57 @@ h3 {
     display: flex;
     display: -webkit-flex;
     width: 100%;
-    background-color:darkgrey;
+    background-color:rgb(126, 124, 124);
 }
+
 .section-img {
     width: 100%;
     margin: 0 auto;
     padding: 1em;
+    box-shadow: black .5em .5em .2em;
+    background: rgb(0, 0, 0);
+    border: darkgoldenrod 1px solid;
 }
+
 .section-item {
     width: 30%;
     margin: 1em;
-    background-color: darkgoldenrod;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, .8),
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0)
+    ),
+    url(https://img00.deviantart.net/2587/i/2015/254/0/3/harry_potter_wallpaper__gryffindor_stripes_by_theladyavatar-d5z2f66.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 1em;
+    color: rgb(223, 219, 219);
+    text-align: center;
+    text-shadow: black 2px 2px;
+    box-shadow: black 10px 10px 5px;
+    border-radius: 15px;
 }
+
 .section-item h4 {
     font-size: 2em;
     font-family: "Tangerine", cursive;
     text-align: center;
 }
-.section-item p {
-    padding: 1em;
+
+.hermione p {
+    font-family: 'Great Vibes', cursive;
+    font-size:  1.2em;
 }
+
+.harry p {
+    font-family: 'Indie Flower', cursive;
+}
+
+.ron  p {
+    font-family: 'Dokdo', cursive;
+}
+
 main {
     flex: 2;
     margin: 1em;
