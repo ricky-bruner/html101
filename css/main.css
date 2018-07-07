@@ -103,7 +103,7 @@ h3 {
     display: flex;
     display: -webkit-flex;
     width: 100%;
-    background: radial-gradient(circle, silver, dimgray, rgb(0, 0, 0));
+    background-color: dimgrey;
 }
 .dumbledore {
     flex-direction: column;
