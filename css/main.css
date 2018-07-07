@@ -41,10 +41,10 @@ nav a {
     margin: .2em 1em 0px 1em;
     color: darkred;
     text-shadow:
-		-.5px -.5px 0 #000,
-		.5px -.5px 0 #000,
-		-.5px .5px 0 #000,
-		.5px .5px 0 #000;
+		-.3px -.3px 0 #000,
+		.3px -.3px 0 #000,
+		-.3px .3px 0 #000,
+		.3px .3px 0 #000;
 }
 
 nav a:link {
@@ -103,7 +103,7 @@ h3 {
     display: flex;
     display: -webkit-flex;
     width: 100%;
-    background-color:rgb(126, 124, 124);
+    background: radial-gradient(circle, silver, dimgray, rgb(0, 0, 0));
 }
 .dumbledore {
     flex-direction: column;
@@ -120,7 +120,7 @@ h3 {
     width: 100%;
     margin: 0 auto;
     padding: 1em;
-    box-shadow: black .5em .5em .2em;
+    box-shadow: black .5em .5em .5em;
     background: rgb(0, 0, 0);
     border: darkgoldenrod 1px solid;
 }
@@ -175,10 +175,15 @@ aside {
 }
 
 footer {
-    background-color: darkred;
+    background: radial-gradient(circle, rgb(133, 0, 0), rgb(0, 0, 0));
     color: darkgoldenrod;
     text-align: center;
     padding: 1em;
+    text-shadow:
+		-.5px -.5px 0 black,
+		.5px -.5px 0 black,
+		-.5px .5px 0 black,
+		.5px .5px 0 black;
 }
 
 footer a {
