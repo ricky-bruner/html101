@@ -18,11 +18,18 @@ body {
     background-color: white;
     background: linear-gradient(to top left, black, rgb(54, 15, 15), black, rgb(54, 15, 15));
 }
-
+.header-div h1 {
+    margin-left: .4em;
+}
 .header-div img {
-    width: 170px; 
-    height: 170px;
+    width: 170px;
     padding-top: 2em;
+}
+.img2 {
+    padding-bottom: 1.5em;
+}
+.header-svg {
+    height: 170px;
 }
 
 nav {
@@ -61,6 +68,14 @@ nav a:hover {
 
 .main-image {
     max-width: 100%;
+    display: block;
+    background:
+        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        linear-gradient(white);
+
 }
 
 .wrapper {
@@ -103,18 +118,72 @@ h3 {
     display: flex;
     display: -webkit-flex;
     width: 100%;
-    background-color: dimgrey;
+    background: linear-gradient(to top left, black, rgb(54, 15, 15), darkgoldenrod, black, rgb(54, 15, 15));
 }
-.dumbledore {
+.staff {
     flex-direction: column;
     margin: 1em auto;
     justify-content: center;
-    width: 60%;
+    width: 50%;
     text-align: center;
     padding: 2em;
+    
+    color: white;
 }
-.dumbledore img {
-    width: 100%;
+.dumbledore {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://media0.giphy.com/media/U3qYN8S0j3bpK/giphy.gif) no-repeat fixed;
+    background-size: cover;
+}
+.flitwick {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://media.giphy.com/media/kd1wCqUaUYOEE/giphy.gif) no-repeat center;
+    background-size: cover;
+}
+.mcgonagall {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://78.media.tumblr.com/613d035c8bd97a8b798dae59e91c4013/tumblr_ovz82fgWx91vsjcxvo1_500.gif) no-repeat fixed;
+    background-size: cover;
+}
+.snape {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0)
+    ),
+    url(https://www.gamestop.com/gs/images/content-pdp/Loot_images/PP3889HP_Harry_Potter_Potion_Bottle_light_GIF.gif) no-repeat fixed;
+    background-size: cover;
+}
+.hagrid {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://78.media.tumblr.com/0a88395e4912162abf4619fc1476a02b/tumblr_inline_nrnkpjnxOI1r7khyd_500.gif) no-repeat fixed;
+}
+.staff img {
+    width: 80%;
+    border: solid goldenrod 2px;
+    border-radius: 10px;
+    box-shadow: black 10px 10px 10px;
 }
 .section-img {
     width: 100%;
@@ -130,18 +199,18 @@ h3 {
     margin: 1em;
     background:
     linear-gradient(
-      rgba(0, 0, 0, .8),
-      rgba(0, 0, 0, 0.6), 
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 8)
     ),
     url(https://img00.deviantart.net/2587/i/2015/254/0/3/harry_potter_wallpaper__gryffindor_stripes_by_theladyavatar-d5z2f66.jpg) no-repeat fixed;
     background-size: cover;
     padding: 1em;
-    color: rgb(223, 219, 219);
+    color: bisque;
     text-align: center;
     text-shadow: black 2px 2px;
-    box-shadow: black 10px 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.767) 10px 10px 5px;
     border-radius: 15px;
 }
 
@@ -149,6 +218,24 @@ h4 {
     font-size: 2em;
     font-family: "Tangerine", cursive;
     text-align: center;
+    background: linear-gradient( to top, 
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        black,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.03),
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0));
+    text-shadow:
+		-.5px -.5px 0 darkred,
+		.5px -.5px 0 darkred,
+		-.5px .5px 0 darkred,
+        .5px .5px 0 darkred;
+    padding: .5em;
 }
 
 .hermione p {
