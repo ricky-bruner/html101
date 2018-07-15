@@ -15,12 +15,21 @@ body {
 .header-div {
     display: flex;
     justify-content: center;
-    background-color: white;
-    background: linear-gradient(to top left, black, rgb(54, 15, 15), black, rgb(54, 15, 15));
+    background: 
+        linear-gradient(
+            to left, 
+            rgb(0, 0, 0), 
+            rgb(54, 15, 15), 
+            rgba(0, 0, 0, 0), 
+            rgba(54, 15, 15, 0.021)
+            ),
+        url(../images/HogwartsExpress.svg) no-repeat;
+    background-size: contain;
+    background-position-x: 5%
 }
-.header-div h1 {
+/* .header-div h1 {
     margin-left: .4em;
-}
+} */
 .header-div img {
     width: 170px;
     padding-top: 2em;
@@ -28,9 +37,9 @@ body {
 .img2 {
     padding-bottom: 1.5em;
 }
-.header-svg {
+/* .header-svg {
     height: 170px;
-}
+} */
 
 nav {
     background: radial-gradient(circle, darkgoldenrod, goldenrod, gold, goldenrod, darkgoldenrod, black);
@@ -90,15 +99,38 @@ h1, h2, h3 {
 }
 
 h2, h3 {
-    background: linear-gradient(to top left, black, rgb(54, 15, 15), black, rgb(54, 15, 15));
+    /* background: linear-gradient(to top left, black, rgb(54, 15, 15), black, rgb(54, 15, 15)); */
     padding: .5em;
     border-radius: .6em;
+    background: 
+        linear-gradient(-45deg, 
+        black, 
+        rgb(105, 0, 0), 
+        rgba(0, 0, 0, 1), 
+        rgb(105, 0, 0), 
+        rgba(0, 0, 0, 1));
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
 }
+
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 
 h1 {
     font-size: 4em;
     text-align: center;
-    padding: .5em;
+    /* padding: .5em; */
     text-shadow:
 		-1px -1px 0 darkred,
 		1px -1px 0 darkred,
@@ -125,26 +157,35 @@ h3 {
     display: flex;
     display: -webkit-flex;
     width: 100%;
-    /* background: radial-gradient(circle,
+    background: radial-gradient(circle,
 
     rgba(255, 228, 196, 0.6),  
     black, 
-    rgba(255, 228, 196, 0.7));  */
-    background: linear-gradient(to bottom right, bisque, bisque, bisque, rgb(250, 212, 167), #f2f2f2, #f2f2f2, #e6e6e6, #e6e6e6, silver, silver, darkgrey, darkgrey, darkgrey, black);
+    rgba(255, 228, 196, 0.7)); 
+    /* background: linear-gradient(to bottom right, bisque, bisque, bisque, rgb(250, 212, 167), #f2f2f2, #f2f2f2, #e6e6e6, #e6e6e6, silver, silver, darkgrey, darkgrey, darkgrey, black); */
+    background-size: 400% 400%;
+	animation: Gradient 35s linear infinite;
+    /* background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7)),
+        url(../images/parchmentbg.jpg) no-repeat center;
+    background-size: cover; */
+
     color: bisque;
     text-shadow: black 1px 1px;
 }
 .staff {
-    flex-direction: column;
+    flex-direction: row;
     margin: 1em auto;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     text-align: center;
     padding: 2em;
-    
+    flex-wrap: wrap;
     color: white;
 }
-.dumbledore {
+/* .dumbledore {
     background:
     linear-gradient(
       rgba(0, 0, 0, 0),
@@ -153,7 +194,22 @@ h3 {
     ),
     url(https://media0.giphy.com/media/U3qYN8S0j3bpK/giphy.gif) no-repeat center fixed;
     background-size: contain;
+    max-width: 100%;
+} */
+
+.staff-flex {
+    width: 40%;
+    padding: 1em;
+    margin: 1em;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://media0.giphy.com/media/U3qYN8S0j3bpK/giphy.gif) no-repeat fixed;
+    background-size: contain;
 }
+
 .flitwick {
     background:
     linear-gradient(
@@ -161,8 +217,8 @@ h3 {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.6)
     ),
-    url(https://media.giphy.com/media/kd1wCqUaUYOEE/giphy.gif) no-repeat center fixed;
-    background-size: contain;
+    url(https://media.giphy.com/media/kd1wCqUaUYOEE/giphy.gif) no-repeat;
+    background-size: cover;
 }
 .mcgonagall {
     background:
@@ -171,8 +227,8 @@ h3 {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.6)
     ),
-    url(https://78.media.tumblr.com/613d035c8bd97a8b798dae59e91c4013/tumblr_ovz82fgWx91vsjcxvo1_500.gif) no-repeat center fixed;
-    background-size: contain;
+    url(https://78.media.tumblr.com/613d035c8bd97a8b798dae59e91c4013/tumblr_ovz82fgWx91vsjcxvo1_500.gif) no-repeat;
+    background-size: cover;
 }
 .snape {
     background:
@@ -181,7 +237,7 @@ h3 {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0)
     ),
-    url(https://www.gamestop.com/gs/images/content-pdp/Loot_images/PP3889HP_Harry_Potter_Potion_Bottle_light_GIF.gif) no-repeat center fixed;
+    url(https://www.gamestop.com/gs/images/content-pdp/Loot_images/PP3889HP_Harry_Potter_Potion_Bottle_light_GIF.gif) no-repeat;
     background-size: contain;
 }
 .hagrid {
@@ -191,11 +247,11 @@ h3 {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.6)
     ),
-    url(https://78.media.tumblr.com/0a88395e4912162abf4619fc1476a02b/tumblr_inline_nrnkpjnxOI1r7khyd_500.gif) no-repeat center fixed;
+    url(https://78.media.tumblr.com/0a88395e4912162abf4619fc1476a02b/tumblr_inline_nrnkpjnxOI1r7khyd_500.gif) no-repeat;
     background-size: contain;
 }
 .staff img {
-    width: 80%;
+    width: 90%;
     border: solid goldenrod 2px;
     border-radius: 10px;
     box-shadow: black 10px 10px 10px;
