@@ -22,6 +22,36 @@ body {
             rgb(54, 15, 15), 
             rgba(0, 0, 0, 0), 
             rgba(54, 15, 15, 0.021)
+            );
+    
+}
+
+.header-div-students {
+    display: flex;
+    justify-content: center;
+    background: 
+        url(../images/Harry-Ron-Hermione-profile.svg) no-repeat left,
+        url(../images/Gryffindor-lion.svg) no-repeat right,
+        linear-gradient(
+            to left, 
+            rgb(0, 0, 0), 
+            rgb(54, 15, 15), 
+            rgba(0, 0, 0, 0), 
+            rgba(54, 15, 15, 0.021)
+            );      
+    background-size: contain;
+}
+
+.header-div-main {
+    display: flex;
+    justify-content: center;
+    background: 
+        linear-gradient(
+            to left, 
+            rgb(0, 0, 0), 
+            rgb(54, 15, 15), 
+            rgba(0, 0, 0, 0), 
+            rgba(54, 15, 15, 0.021)
             ),
         url(../images/HogwartsExpress.svg) no-repeat;
     background-size: contain;
@@ -198,7 +228,7 @@ h3 {
 } */
 
 .staff-flex {
-    width: 40%;
+    width: 35%;
     padding: 1em;
     margin: 1em;
     background: linear-gradient(
@@ -207,7 +237,7 @@ h3 {
       rgba(0, 0, 0, 0.6)
     ),
     url(https://media0.giphy.com/media/U3qYN8S0j3bpK/giphy.gif) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
 .flitwick {
@@ -217,7 +247,7 @@ h3 {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.6)
     ),
-    url(https://media.giphy.com/media/kd1wCqUaUYOEE/giphy.gif) no-repeat;
+    url(https://media.giphy.com/media/kd1wCqUaUYOEE/giphy.gif) no-repeat center;
     background-size: cover;
 }
 .mcgonagall {
@@ -227,7 +257,7 @@ h3 {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.6)
     ),
-    url(https://78.media.tumblr.com/613d035c8bd97a8b798dae59e91c4013/tumblr_ovz82fgWx91vsjcxvo1_500.gif) no-repeat;
+    url(https://78.media.tumblr.com/613d035c8bd97a8b798dae59e91c4013/tumblr_ovz82fgWx91vsjcxvo1_500.gif) no-repeat center;
     background-size: cover;
 }
 .snape {
@@ -237,8 +267,8 @@ h3 {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0)
     ),
-    url(https://www.gamestop.com/gs/images/content-pdp/Loot_images/PP3889HP_Harry_Potter_Potion_Bottle_light_GIF.gif) no-repeat;
-    background-size: contain;
+    url(https://www.gamestop.com/gs/images/content-pdp/Loot_images/PP3889HP_Harry_Potter_Potion_Bottle_light_GIF.gif) no-repeat bottom;
+    background-size: cover;
 }
 .hagrid {
     background:
@@ -247,8 +277,8 @@ h3 {
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.6)
     ),
-    url(https://78.media.tumblr.com/0a88395e4912162abf4619fc1476a02b/tumblr_inline_nrnkpjnxOI1r7khyd_500.gif) no-repeat;
-    background-size: contain;
+    url(https://78.media.tumblr.com/0a88395e4912162abf4619fc1476a02b/tumblr_inline_nrnkpjnxOI1r7khyd_500.gif) no-repeat center;
+    background-size: cover;
 }
 .staff img {
     width: 90%;
@@ -289,7 +319,7 @@ h4 {
     font-size: 2em;
     font-family: "Tangerine", cursive;
     text-align: center;
-    background: linear-gradient( to top, 
+    /* background: linear-gradient( to top, 
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0),
@@ -300,7 +330,7 @@ h4 {
         rgba(0, 0, 0, 0.05),
         rgba(0, 0, 0, 0.03),
         rgba(0, 0, 0, 0.01),
-        rgba(0, 0, 0, 0));
+        rgba(0, 0, 0, 0)); */
     text-shadow:
 		-.5px -.5px 0 darkred,
 		.5px -.5px 0 darkred,
