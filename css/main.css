@@ -228,7 +228,7 @@ h3 {
 } */
 
 .staff-flex {
-    width: 35%;
+    width: 40%;
     padding: 1em;
     margin: 1em;
     background: linear-gradient(
@@ -238,6 +238,8 @@ h3 {
     ),
     url(https://media0.giphy.com/media/U3qYN8S0j3bpK/giphy.gif) no-repeat fixed;
     background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 10px;
 }
 
 .flitwick {
